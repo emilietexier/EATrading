@@ -1,2 +1,2 @@
 # EATrading
-Open Source Trading System
+Open Source Trading System using technical indicators
