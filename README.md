@@ -31,20 +31,38 @@ The following indicators were used:
 After the choice of indicators, it was necessary to allocate a specific weight to each indicator for computing both stock's score and trend. This choice was made based on research work but can most likely be optimized. 
 
 - #### Score
-The score is computed using 4 indicators: OBV (x1), Aroon Up (x2), Aroon Down (x3) and RSI (x4). 
+The score is computed using 4 indicators: OBV (*x1*), Aroon Up (*x2*), Aroon Down (*x3*) and RSI (*x4*). 
 
-Each xi is assigned a value using the indicator's value. 
+Each *xi* is assigned a specific value calculated using the indicator's value. 
 - if OBV is down, then *x1 = -1*, otherwise, *x1 = 1*
 - *x2 = -((aroon_up - 50)/50)*
 - *x3 = (aroon_down - 50)/50*
 - *x4 = (rsi - 50)/50*
 
-Each xi is associated with its weight wsi representing the weight of the indicator when computing the score.
+Each *xi* is associated with its weight *wsi* representing the weight of the indicator when computing the score.
 - *ws1 = 0.2*
 - *ws2 = 0.15*
 - *ws3 = 0.15*
 - *ws4 = 0.5*
 
-Thus, *score = x1 * ws1 + x2 * ws2 + x3 * ws3 + x4 * ws4*
+Thus, ***score = x1 * ws1 + x2 * ws2 + x3 * ws3 + x4 * ws4***
 
+- #### Trend 
+The trend is computed using 3 indicators: ADX (*y1*), Aroon Up (*y2*) and Aroon Down (*y3*).
+
+Each *yi* is assigned a specific value calculated using the indicator's value.
+- *y1 = adx/100*
+- *y2 = aroon_up/100*
+- *y3 = aroon_down/100*
+
+Each *yi* is associated with its weight *wti* representing the weight of the indicator when computing the trend.
+- *wt1 = 0.6*
+- *wt2 = 0.15*
+- *wt3 = 0.15*
+
+Thus, ***trend = y1 * wt1 + y2 * wt2 + y3 * wt3***
+
+### Conclusion 
+
+This section will be filled with the results once the testing period is over.
 
