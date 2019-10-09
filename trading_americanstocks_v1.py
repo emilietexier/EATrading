@@ -34,13 +34,6 @@ def compute_stock(): #calculates score and trend for a specific stock using seve
     list = [stock_score , stock_trend]
     return list
 
-def compute_trade(score,trend): #calculates trading index using stock's score and trend
-    w1 = 0.8 #weight for score
-    w2 = 0.2 #weight for trend
-    trade = w1 * score + w2 * trend
-    return trade
-
-
 def main():
     result = compute_stock()
     print('Score = ', result[0])
