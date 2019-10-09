@@ -1,9 +1,9 @@
 # EA Trading
-Open Source Trading System using Technical Indicators
+Open Source Trading System 
 
 EA Trading will be divided in several projects representing different trading strategies. The goal is to develop multiple strategies and test them in a live environment in order to develop a complete and accurate unique trading system compiling the different strategies studied.
 
-## Project 1
+## Project 1 : using 5 technical indicators
 
 The aim of this first project is to build a simple trading system using technical five indicators which will be tested on a live platform. 
 
