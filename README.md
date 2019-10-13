@@ -1,7 +1,7 @@
 # EA Trading
 Open Source Trading System 
 
-EA Trading will be divided in several projects representing different trading strategies. The goal is to develop multiple strategies and test them in a live environment in order to develop a complete and accurate unique trading system compiling the different strategies studied.
+EA Trading will be divided in several projects, each one representing a different trading strategy. The goal is to develop multiple strategies and test them in the practice environment of a trading platform (Trading 212) in order to develop a complete, accurate and unique trading system compiling the different strategies studied. This trading system will then be used for trading. 
 
 ## Project 1 : using 5 technical indicators
 
